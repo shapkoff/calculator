@@ -171,11 +171,6 @@ class App(tk.Tk):
         self.clear()
         self.label.config(text='Error')
 
-    # def check_missclick(self):
-    #     if len(self.first) == 0:
-    #         return
-    #     elif len(self.operation) == 0 and
-
 
 if __name__ == '__main__':
     root = App()
