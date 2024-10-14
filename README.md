@@ -1,1 +1,1 @@
-This is my version of the calculator made in Python. There may be errors here
+This is my version of the calculator made in Python with Tkinter. There may be errors here
