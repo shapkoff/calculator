@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import font
+import _tkinter
 import config
 
 
@@ -8,9 +9,12 @@ class App(tk.Tk):
         super().__init__()
 
         # config
+        try:
+            self.iconbitmap(config.icon)
+        except _tkinter.TclError:
+            pass
         self.title(config.title)
         self.geometry(config.resolution)
-        self.iconbitmap(config.icon)
         self.minsize(*config.min_resolution)
         self.first = ''
         self.second = ''
